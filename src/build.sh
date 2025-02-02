@@ -14,10 +14,10 @@ rm -rf $site
 mkdir -p $site
 
 # List the index
-function setupindex {
-	echo "<h1>HEADING 1</h1>" > ./permanav/index/content.htm;
+setupindex() {
+	echo "<h1>HEADING 1</h1>" > ../permanav/index/content.htm;
 	for f in *; do #GRE V MAPO PHOTOGRAPHY
-		echo "<h2>NAME OF FOLDER ${f}</h2>" >> ./permanav/index/content.htm;
+		echo "<h2>NAME OF FOLDER ${f}</h2>" >> ../permanav/index/content.htm;
 		#categoryname=$f;setupindex;
 		#for f in *; do #ZDAJ GREV PODMAPO PHOTOGRAPHY
 		#	echo "<a href='${categoryname}/${f}.html'>{${f}}</a>" >> ../permanav/index/content.htm; ##IN GENERIRA LINK PODMAPE

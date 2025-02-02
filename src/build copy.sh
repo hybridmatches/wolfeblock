@@ -25,7 +25,6 @@ function setupindex {
 	echo "Index built"
 }
 
-
 function sitenav {
 	echo "<nav class='sitenav'>" > ../inc/nav.htm;
 	for f in *; do
@@ -36,11 +35,6 @@ function sitenav {
 	echo "</nav>" > ../inc/nav.htm;
 	echo "nav"
 }
-
-
-
-	
-	
 
 # Setup topics
 cd $content
