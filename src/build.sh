@@ -26,9 +26,25 @@ function setupindex {
 }
 
 
+function sitenav {
+	echo "<nav class='sitenav'>" > ../inc/nav.htm;
+	for f in *; do
+		if [ $f != 'index' ]; then
+			echo "<a href='${f}.html'>{${f}}</a>" >>../inc/nav.htm;
+		fi
+	done
+	echo "</nav>" > ../inc/nav.htm;
+	echo "nav"
+}
+
+
+
+	
+	
 
 # Setup topics
 cd $content
+sitenav;
 setupindex;
 for f in *; do
 	cd $f;
