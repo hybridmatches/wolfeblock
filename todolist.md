@@ -2,7 +2,9 @@
 
 -Improve css
 -Make fonts be the same on every system
+-White links
+-Improve bash
+-Pia naredi metagen.sh
 
-
--Footer generates current YEAR.
--Implement category metadata, so PAGES can be organized. (modify meta.htm and change buildsh.)
+FINISH THE GANGENGINE_x86
+ONLY GIT THE shellscripts
