@@ -25,6 +25,8 @@ function setupindex {
 	echo "Index built"
 }
 
+
+
 # Setup topics
 cd $content
 setupindex;
