@@ -11,6 +11,89 @@
 \______/                      \______/                               
 
 */
-body {margin: 0; padding: 0;background-color: #fff; color: #000;}
+body {margin: 0; padding: 0;}
 nav a{text-decoration: none;color: #000;padding: 0 4px; font-size: 16px;}
 nav a:hover{background-color: #000; color: #fff;}
+
+
+body {
+	margin-left: 20%;
+	padding: 0;
+	font-family: serif;
+	font-weight: 500;
+	line-height: 1.6em;
+	font-size: 16px;
+}
+
+main a:visited {
+	color: black;
+	text-decoration: none;
+    
+}
+
+main {
+	
+	width: 70%;
+	padding: 0 3% 5%;
+}
+
+nav {padding:1% 1% 0 3%;width:90%;clear:both;}
+footer {margin:0 0 3% 3%; padding-top: 1%;  width:70%;clear:both; border-top: 1.5px solid;}
+aside div {clear:both;padding-bottom:30px;}
+ol {padding-left: 16px;}
+h3 {text-transform: uppercase;font-weight: 300;}
+h1 {font-weight: 400;}
+h4 {color: rgb(0, 0, 0);}
+ul {list-style-type:none;margin:0 0 30px;padding:0;width:100%;}
+aside div ul {margin:0;}
+ul li:before {content: "-";display: inline;position: relative;left: -5px;}
+ul li {padding-left: 10px;text-indent: -5px;}
+ol li  {padding-left: 10px;text-indent: -5px;list-style-type:decimal-leading-zero;} 
+.images ul {clear: both;}
+.images ul li {padding-left: 0;float: left;text-indent: 0;}
+.images ul li:before {display:none;}
+.images ul img {width:120px;padding-right:10px;}
+.pink {color: palevioletred;}
+@media (max-width:600px){
+	body {background:#ffffff;margin-left: 0%;}
+	main,aside {float:none; width:95.5%;}
+	main {padding:0 3%; }
+	aside {padding:0 5%;}
+    footer {padding:3%;width:95.5%;clear:both; margin: 0; margin-top: 15px;}
+}
+
+
+
+body code[class*="language-"],
+body pre[class*="language-"] {
+	color: rgb(255, 255, 255);
+	font-family: monospace;
+	font-size:0.9em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	tab-size: 1;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    overflow: auto;
+    display: block;
+    padding:1em;
+    margin:2em 0;
+  }
+  
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+      background: #2a2a2a;
+  }
+  
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+      white-space: normal;
+  }
+  
