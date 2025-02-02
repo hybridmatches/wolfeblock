@@ -15,13 +15,16 @@ mkdir -p $site
 
 # List the index
 setupindex() {
-	echo "<h1>HEADING 1</h1>" > ../permanav/index/content.htm;
+	echo "<h1>INDEX PAGE</h1>" > ../permanav/index/content.htm;
 	for f in *; do #GRE V MAPO PHOTOGRAPHY
-		echo "<h2>NAME OF FOLDER ${f}</h2>" >> ../permanav/index/content.htm;
-		#categoryname=$f;setupindex;
-		#for f in *; do #ZDAJ GREV PODMAPO PHOTOGRAPHY
-		#	echo "<a href='${categoryname}/${f}.html'>{${f}}</a>" >> ../permanav/index/content.htm; ##IN GENERIRA LINK PODMAPE
-		#done
+		echo "<h2>${f}</h2><ul>" >> ../permanav/index/content.htm;
+		categoryname=$f;
+		cd $f;
+		for f in *; do #ZDAJ GREV PODMAPO PHOTOGRAPHY
+			echo "<li><a href='${categoryname}/${f}.html'>{${f}}</a></li>" >> ../../permanav/index/content.htm; ##IN GENERIRA LINK PODMAPE
+		done
+		cd ..
+		echo "</ul>" >> ../permanav/index/content.htm;
 	done
 	echo "Index built"
 }
