@@ -25,11 +25,9 @@ function setupindex {
 	echo "Index built"
 }
 
-
 # Setup topics
 cd $content
 setupindex;
-
 for f in *; do
 	cd $f;
 	markup=''
