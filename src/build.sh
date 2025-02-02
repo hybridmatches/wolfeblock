@@ -10,41 +10,24 @@ foot=../../inc/footer.htm
 bottom=../../inc/html-bottom.htm
 tally=0
 
-
 rm -rf $site
 mkdir -p $site
 
 # List the index
 function setupindex {
-	echo "<h1>Full site index</h1>" > index/content.htm;
-	for f in *; do
-		if [ $f != 'index' ]; then
-			echo "<a href='${f}.html'>{${f}}</a><br>" >> index/content.htm;
-		fi
+	echo "<h1>HEADING 1</h1>" > ./permanav/index/content.htm;
+	for f in *; do #GRE V MAPO PHOTOGRAPHY
+		echo "<h2>NAME OF FOLDER ${f}</h2>" >> ./permanav/index/content.htm;
+		#categoryname=$f;setupindex;
+		#for f in *; do #ZDAJ GREV PODMAPO PHOTOGRAPHY
+		#	echo "<a href='${categoryname}/${f}.html'>{${f}}</a>" >> ../permanav/index/content.htm; ##IN GENERIRA LINK PODMAPE
+		#done
 	done
 	echo "Index built"
 }
 
-
-function sitenav {
-	echo "<nav class='sitenav'>" > ../inc/nav.htm;
-	for f in *; do
-		if [ $f != 'index' ]; then
-			echo "<a href='${f}.html'>{${f}}</a>" >>../inc/nav.htm;
-		fi
-	done
-	echo "</nav>" > ../inc/nav.htm;
-	echo "nav"
-}
-
-
-
-	
-	
-
 # Setup topics
 cd $content
-sitenav;
 setupindex;
 for f in *; do
 	cd $f;
