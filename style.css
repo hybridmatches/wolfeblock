@@ -11,9 +11,9 @@
 \______/                      \______/                               
 
 */
-body {margin: 0; padding: 0;}
-nav a{text-decoration: none;color: #000;padding: 0 4px; font-size: 16px;}
-nav a:hover{background-color: #000; color: #fff;}
+body {margin: 0; padding: 0;background-color: #000; color: #fff;}
+nav a{text-decoration: none;color: #fff;padding: 0 4px; font-size: 16px;}
+nav a:hover{background-color: #fff; color: #000;}
 
 
 body {
