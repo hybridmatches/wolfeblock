@@ -57,11 +57,24 @@ sitenav() {
 	echo "nav"
 }
 
+
+footy() {
+	datum=$(date +%d-%m-%Y);
+	letina=$(date +%Y);
+	
+	echo "<footer><a>Ganga 95© ${letina} </a> <a>Gangad: ${datum}</a></footer></main>" >../inc/footer.htm;
+
+	
+
+}
+
 # Setup topics
 cd $content
+footy;
 sitenav;
 setupindex;
 setupgungalarc;
+
 for f in *; do
 	cd $f;
 	for f in *; do
