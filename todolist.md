@@ -8,3 +8,6 @@
 
 FINISH THE GANGENGINE_x86
 ONLY GIT THE shellscripts
+
+-Design a beautiful logo
+-mascot (gungalarg shark)
