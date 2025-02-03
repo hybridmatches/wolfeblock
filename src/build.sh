@@ -6,7 +6,9 @@ headerB=../../inc/header-bottom.htm
 sitenav=../../inc/nav.htm
 meta=meta.htm
 contentFile=content.htm
+foottop=../../inc/footer-top.htm
 foot=../../inc/footer.htm
+footbot=../../inc/footer-bottom.htm
 bottom=../../inc/html-bottom.htm
 tally=0
 
@@ -25,7 +27,7 @@ setupindex() {
 		cd ..
 		echo "</ul>" >> ../permanav/index/content.htm;
 	done
-	echo "Index built"
+	echo "Setup index -- DONE"
 }
 
 setupgungalarc() {
@@ -39,20 +41,20 @@ setupgungalarc() {
 		done
 		cd ..
 		echo "</ul>" >> ../permanav/index_${categoryname}/content.htm;
-	echo "Index built"
+	echo "setup gungalarc -- DONE"
 	done
 }
 
 sitenav() {
 	echo "<nav class='sitenav'>" > ../inc/nav.htm;
-	echo "<a href='home.html'>{home}</a>" >> ../inc/nav.htm;
+	echo "<a href='home.html'>home</a>" >> ../inc/nav.htm;
 	for f in *; do
 		if [ $f != 'index' ]; then
-			echo "<a href='index_${f}.html'>{${f}}</a>" >>../inc/nav.htm;
+			echo "<a href='index_${f}.html'>${f}</a>" >>../inc/nav.htm;
 		fi
 	done
-	echo "<a href='index.html'>{index}</a>" >> ../inc/nav.htm;
-	echo "<a href='about.html'>{about}</a>" >> ../inc/nav.htm;
+	echo "<a href='index.html'>index</a>" >> ../inc/nav.htm;
+	echo "<a href='about.html'>about</a>" >> ../inc/nav.htm;
 	echo "</nav>" >> ../inc/nav.htm;
 	echo "nav"
 }
@@ -62,7 +64,9 @@ footy() {
 	datum=$(date +%d-%m-%Y);
 	letina=$(date +%Y);
 	
-	echo "<footer><a>Ganga 95© ${letina} </a> <a>Gangad: ${datum}</a></footer></main>" >../inc/footer.htm;
+	#echo "<footer><a>Ganga 95© ${letina} </a> <a>Gangad: ${datum}</a></footer></main>" >../inc/footer.htm;
+
+	echo "<span><a href="about.html">Piarhija</a> &copy; ${letina} <a><small> Last change: ${datum} </small></a></span>"  >../inc/footer.htm;
 
 	
 
@@ -83,7 +87,7 @@ for f in *; do
 		topPart=$(cat ../$headerA $meta ../$headerB);
 		nav=$(cat ../$sitenav);
 		contentText=$(cat $contentFile);
-		footer=$(cat ../$foot);
+		footer=$(cat ../$foottop ../$foot ../$footbot);
 		closefile=$(cat ../$bottom);
 		mainContent="<main>${contentText}</main>";
 		sideBar="<aside>${markup}</aside>";
@@ -101,7 +105,7 @@ for f in *; do
 	topPart=$(cat $headerA $meta $headerB);
 	nav=$(cat $sitenav);
 	contentText=$(cat $contentFile);
-	footer=$(cat $foot);
+	footer=$(cat $foottop $foot $footbot);
 	closefile=$(cat $bottom);
 	mainContent="<main>${contentText}</main>";
 	sideBar="<aside>${markup}</aside>";
