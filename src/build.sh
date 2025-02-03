@@ -27,7 +27,7 @@ setupindex() {
 		cd ..
 		echo "</ul>" >> ../permanav/index/content.htm;
 	done
-	echo "Index built"
+	echo "Setup index -- DONE"
 }
 
 setupgungalarc() {
@@ -41,7 +41,7 @@ setupgungalarc() {
 		done
 		cd ..
 		echo "</ul>" >> ../permanav/index_${categoryname}/content.htm;
-	echo "Index built"
+	echo "setup gungalarc -- DONE"
 	done
 }
 
@@ -66,7 +66,7 @@ footy() {
 	
 	#echo "<footer><a>Ganga 95© ${letina} </a> <a>Gangad: ${datum}</a></footer></main>" >../inc/footer.htm;
 
-	echo "<span><a href="about.html">Ganga95</a> &copy; ${letina} <a>Last change: ${datum}</a></span>"  >../inc/footer.htm;
+	echo "<span><a href="about.html">Piarhija</a> &copy; ${letina} <a><small> Last change: ${datum} </small></a></span>"  >../inc/footer.htm;
 
 	
 
