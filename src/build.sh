@@ -34,7 +34,7 @@ setupgungalarc() {
 	for f in *; do
 		categoryname=$f;
 		mkdir -p ../permanav/index_${categoryname}
-		echo "<h1>INDEX PAGE FOR ${f}</h1><ul>" > ../permanav/index_${categoryname}/content.htm
+		echo "<ul>" > ../permanav/index_${categoryname}/content.htm
 		cd $f;
 		for f in *; do #ZDAJ GREV PODMAPO PHOTOGRAPHY
 			echo "<li><a href='${site}/${f}.html'>{${f}}</a></li>" >> ../../permanav/index_${categoryname}/content.htm; ##IN GENERIRA LINK PODMAPE
@@ -47,14 +47,14 @@ setupgungalarc() {
 
 sitenav() {
 	echo "<nav class='sitenav'>" > ../inc/nav.htm;
-	echo "<a href='home.html'>home</a>" >> ../inc/nav.htm;
+	echo "<a href='home.html'>HOME</a>" >> ../inc/nav.htm;
 	for f in *; do
 		if [ $f != 'index' ]; then
 			echo "<a href='index_${f}.html'>${f}</a>" >>../inc/nav.htm;
 		fi
 	done
-	echo "<a href='index.html'>index</a>" >> ../inc/nav.htm;
-	echo "<a href='about.html'>about</a>" >> ../inc/nav.htm;
+	echo "<a href='index.html'>INDEX</a>" >> ../inc/nav.htm;
+	echo "<a href='about.html'>ABOUT</a>" >> ../inc/nav.htm;
 	echo "</nav>" >> ../inc/nav.htm;
 	echo "nav"
 }

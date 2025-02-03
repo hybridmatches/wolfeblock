@@ -12,3 +12,5 @@ ONLY GIT THE shellscripts
 -Design a beautiful logo
 -mascot (gungalarg shark)
 
+## !important
+- ko si na enem izmed subpejgov se mora nav bar obarvat aves uno coresponding nav bar ko se obarva in ostane obarvan ko si na tem subpejgu, tko majo vsi lajk omg zxakaj ganga nemore tega narest ker shitty os je ganga.
