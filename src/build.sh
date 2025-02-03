@@ -41,20 +41,23 @@ setupgungalarc() {
 		done
 		cd ..
 		echo "</ul>" >> ../permanav/index_${categoryname}/content.htm;
+		#začasen metagen za index_F
+		echo "<title>ganga95 - home</title> <meta name='description' content='home' />
+" >>../permanav/index_${categoryname}/meta.htm;
 	echo "setup gungalarc -- DONE"
 	done
 }
 
 sitenav() {
 	echo "<nav class='sitenav'>" > ../inc/nav.htm;
-	echo "<a href='home.html'>HOME</a>" >> ../inc/nav.htm;
+	echo "<a href='home.html'>/HOME</a>" >> ../inc/nav.htm;
 	for f in *; do
 		if [ $f != 'index' ]; then
-			echo "<a href='index_${f}.html'>${f}</a>" >>../inc/nav.htm;
+			echo "<a href='index_${f}.html'>/${f}</a>" >>../inc/nav.htm;
 		fi
 	done
-	echo "<a href='index.html'>INDEX</a>" >> ../inc/nav.htm;
-	echo "<a href='about.html'>ABOUT</a>" >> ../inc/nav.htm;
+	echo "<a href='index.html'>/INDEX</a>" >> ../inc/nav.htm;
+	echo "<a href='about.html'>/ABOUT</a>" >> ../inc/nav.htm;
 	echo "</nav>" >> ../inc/nav.htm;
 	echo "nav"
 }
