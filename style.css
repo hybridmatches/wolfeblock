@@ -12,8 +12,10 @@ _____/\\\\\\\\\\\\______________________________________________________________
 
 
 * { margin:0;padding:0;text-decoration:none;box-sizing:border-box;color:#000 }
-html { background-image:url(assets/bleh.gif);background-repeat:repeat }
-body { background:#fff;font-family:serif;font-size:16px;overflow-x:hidden }
+/*html { background-image:url(assets/bleh.gif);background-repeat:repeat }*/
+html { background-image:url(assets/img/time/Pia\ Arhija\ Time1.jpg);background-repeat:repeat }
+
+body {margin: 30px 30px; background:#fff;font-family:sans-serif;font-size:16px;overflow-x:hidden }
 body > *, body main > *, main figure > div > *, main p, main q, main cite, main pre { margin-bottom:30px }
 body .right { float:right }
 body a.self, body a.parent { font-style:italic }
@@ -39,9 +41,9 @@ main ul, main ol { margin:0 0 30px 30px }
 main ul ul { margin-bottom:0 }
 main ul li a {text-decoration: none;}
 
-main > ul > li a:visited:before, main > ul > li a:visited:after { color: black; }
-main a:before { content: '{'; }
-main a:after { content: '}'; }
+main > ul > li a:visited:before, main > ul > li a:visited:after { color: #fff; }
+main > ul > li a:before { content: '{'; }
+main > ul > sli a:after { content: '}'; }
 
 
 
@@ -74,8 +76,9 @@ div.codeview pre.src { background:#efefef;color:#000}
 div.codeview pre a { float:right;color:#FFC0CB;text-decoration:none;font-weight:bold }
 
 @media (prefers-color-scheme:dark) {
+	main > ul > li a:visited:before, main > ul > li a:visited:after { color: #fff; }
 	* { color:#fff }
-	html { background-image:url(assets/blehblack.gif);background-repeat:repeat }
+	html { background-color: #fff;background-repeat:repeat }
 	body { background:#000 }
 	main a:hover, main a:hover > *, nav a:hover, nav a:hover > * { background-color:#fff;color:#000;text-decoration:none }
 	input { color:#000 }

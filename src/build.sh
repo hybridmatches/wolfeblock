@@ -50,7 +50,7 @@ setupgungalarc() {
 
 sitenav() {
 	echo "<nav class='sitenav'>" > ../inc/nav.htm;
-	echo "<a href='home.html'>/HOME</a>" >> ../inc/nav.htm;
+	echo "<a href='home.html'>/PIARHIJA</a>" >> ../inc/nav.htm;
 	for f in *; do
 		if [ $f != 'index' ]; then
 			echo "<a href='index_${f}.html'>/${f}</a>" >>../inc/nav.htm;
