@@ -49,7 +49,7 @@ setupgungalarc() {
 }
 
 sitenav() {
-	echo "<header><a href="home.hmtl"><img src="../assets/logosmoll.png"></a></header><nav class='sitenav'><ul>" > ../inc/nav.htm;
+	echo "<header><a href="home.html"><img src="../assets/logosmoll.png"></a></header><nav class='sitenav'><ul>" > ../inc/nav.htm;
 	#echo "<li><a href='home.html'>/PIARHIJA</a></li>" >> ../inc/nav.htm;
 	for f in *; do
 		if [ $f != 'index' ]; then
@@ -57,7 +57,7 @@ sitenav() {
 		fi
 	done
 	echo "<li><a href='index.html'>INDEX</a></li>" >> ../inc/nav.htm;
-	echo "<li><a href='ABOUT.html'>ABOUT</a></li>" >> ../inc/nav.htm;
+	echo "<li><a href='about.html'>ABOUT</a></li>" >> ../inc/nav.htm;
 	echo "</ul></nav>" >> ../inc/nav.htm;
 	echo "nav"
 }
