@@ -37,13 +37,13 @@ setupgungalarc() {
 		echo "<ul>" > ../permanav/index_${categoryname}/content.htm
 		cd $f;
 		for f in *; do #ZDAJ GREV PODMAPO PHOTOGRAPHY
-			echo "<li><a href='${site}/${f}.html'>{${f}}</a></li>" >> ../../permanav/index_${categoryname}/content.htm; ##IN GENERIRA LINK PODMAPE
+			echo "<li><a href='${site}/${f}.html'>${f}</a></li>" >> ../../permanav/index_${categoryname}/content.htm; ##IN GENERIRA LINK PODMAPE
 		done
 		cd ..
 		echo "</ul>" >> ../permanav/index_${categoryname}/content.htm;
 		#začasen metagen za index_F
-		echo "<title>ganga95 - home</title> <meta name='description' content='home' />
-" >>../permanav/index_${categoryname}/meta.htm;
+		echo "<title>ganga95 - index of "${categoryname}"</title> <meta name='description' content='index of "${categoryname}"' />
+" >../permanav/index_${categoryname}/meta.htm;
 	echo "setup gungalarc -- DONE"
 	done
 }
@@ -69,7 +69,7 @@ footy() {
 	
 	#echo "<footer><a>Ganga 95© ${letina} </a> <a>Gangad: ${datum}</a></footer></main>" >../inc/footer.htm;
 
-	echo "<span><a href="about.html">Piarhija</a> &copy; ${letina} <a><small> Last change: ${datum} </small></a></span>"  >../inc/footer.htm;
+	echo "<span><a href="about.html">Piarhija</a> &copy; ${letina} <a><i> Last change: ${datum} </i></a></span>"  >../inc/footer.htm;
 
 	
 

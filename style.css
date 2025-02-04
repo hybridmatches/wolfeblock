@@ -13,7 +13,7 @@ _____/\\\\\\\\\\\\______________________________________________________________
 
 * { margin:0;padding:0;text-decoration:none;box-sizing:border-box;color:#000 }
 html { background-image:url(assets/bleh.gif);background-repeat:repeat }
-body { background:#fff;font-family:sans-serif;font-size:16px;overflow-x:hidden }
+body { background:#fff;font-family:serif;font-size:16px;overflow-x:hidden }
 body > *, body main > *, main figure > div > *, main p, main q, main cite, main pre { margin-bottom:30px }
 body .right { float:right }
 body a.self, body a.parent { font-style:italic }
@@ -37,6 +37,15 @@ main iframe { width:100% }
 main h1, main h2, main h3, main h4, main h5 { max-width:400px }
 main ul, main ol { margin:0 0 30px 30px }
 main ul ul { margin-bottom:0 }
+main ul li a {text-decoration: none;}
+
+main > ul > li a:visited:before, main > ul > li a:visited:after { color: black; }
+main a:before { content: '{'; }
+main a:after { content: '}'; }
+
+
+
+
 main ul li, main ol li { line-height:25px;padding:0 5px }
 main figure img { display:block;margin:0 }
 main figure figcaption { padding:15px 0 }
@@ -79,3 +88,4 @@ div.codeview pre a { float:right;color:#FFC0CB;text-decoration:none;font-weight:
 	footer { border-top:1px solid white }
 	footer * { color:white }
 }
+
