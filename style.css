@@ -26,7 +26,7 @@ table tr img { margin-bottom:0; display:block }
 hr { clear:both;border:0 }
 header { float:left;margin:40px 30px 30px 30px }
 header img { display:block }
-nav { padding:25px 25px 30px;margin:0;}
+nav { padding:25px 25px 30px;margin:0;text-transform: uppercase;}
 nav li{list-style-type: none;}
 
 nav a { padding:0 4px}
