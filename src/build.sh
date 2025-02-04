@@ -57,7 +57,7 @@ sitenav() {
 		fi
 	done
 	echo "<li><a href='index.html'>INDEX</a></li>" >> ../inc/nav.htm;
-	echo "<li><a href='about.html'>ABOUT</a></li>" >> ../inc/nav.htm;
+	echo "<li><a href='ABOUT.html'>ABOUT</a></li>" >> ../inc/nav.htm;
 	echo "</ul></nav>" >> ../inc/nav.htm;
 	echo "nav"
 }
