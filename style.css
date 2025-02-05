@@ -28,6 +28,7 @@ table tr img { margin-bottom:0; display:block }
 hr { clear:both;border:0 }
 header { float:left;margin:20px 15px 15px 30px ;padding:20px 15px 15px 15px  ;}
 header img { display:block }
+header img:hover { filter:invert(1) hue-rotate(180deg); background-color: #fff; }
 nav { padding:20px 25px 30px;margin:0;text-transform: uppercase;}
 nav li{list-style-type: none;}
 
