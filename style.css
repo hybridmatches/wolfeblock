@@ -70,7 +70,7 @@ main kbd { font-size:12px;display:inline-block;padding:0 5px;font-weight:bold;bo
 footer { padding:30px 0 30px 0;line-height:30px;clear:both;margin-left: 30px;margin-right: 30px;border-top:1px solid black }
 footer a { display:inline-block;margin-right:3px }
 
-footer img { height:30px;vertical-align:middle;margin:0 3px }
+footer img { height:30px;vertical-align:middle;margin:0 3px; image-rendering: pixelated;}
 footer div.right img { margin-left:10px }
 
 div.codeview { background:#eee;border-radius:4px;overflow:hidden }
@@ -82,7 +82,7 @@ div.codeview pre a { float:right;color:#FFC0CB;text-decoration:none;font-weight:
 @media (prefers-color-scheme:dark) {
 	main > ul > li a:visited:before, main > ul > li a:visited:after { color: #fff; }
 	* { color:#fff }
-	html { background-color: #fff;background-repeat:repeat }
+	html {background-color: #625555;;background-repeat:repeat }
 	body { background:#000 }
 	main a:hover, main a:hover > *, nav a:hover, nav a:hover > * { background-color:#fff;color:#000;text-decoration:none }
 	input { color:#000 }
