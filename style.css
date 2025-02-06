@@ -35,7 +35,7 @@ nav li{list-style-type: none;}
 nav a { padding:0 4px}
 main { margin-left:30px;margin-right:30px;max-width:824px;clear:both;position:relative }
 main a { text-decoration:underline }
-main a[target="_blank"] { text-decoration-style:dotted }
+main a[target="_blank"] { text-decoration-style:solid }
 main article { border-left:1px dotted #000;padding-left:25px;clear:both }
 main cite { display:block;clear:both }
 main cite:before { content:"— " }
@@ -49,6 +49,9 @@ main > ul > li a:visited:before, main > ul > li a:visited:after { color: #fff; }
 main > ul > li a:before { content: '{'; }
 main > ul > li a:after { content: '}'; }
 
+.indexul > ul > li a:visited:before, .indexul > ul > li a:visited:after { color: #fff; }
+.indexul > ul > li a:before { content: '{'; }
+.indexul > ul > li a:after { content: '}'; }
 
 
 
@@ -66,6 +69,9 @@ main pre { overflow:auto;background:#efefef;padding:10px;font-size:80% }
 main pre code, main pre i { color:#888 }
 main code { white-space:pre }
 main hr { clear:both }
+
+
+
 main kbd { font-size:12px;display:inline-block;padding:0 5px;font-weight:bold;border-radius:4px;line-height:20px;border:2px solid #222 }
 footer { padding:30px 0 30px 0;line-height:30px;clear:both;margin-left: 30px;margin-right: 30px;border-top:1px solid black }
 footer a { display:inline-block;margin-right:3px }
@@ -80,7 +86,8 @@ div.codeview pre.src { background:#efefef;color:#000}
 div.codeview pre a { float:right;color:#FFC0CB;text-decoration:none;font-weight:bold }
 
 @media (prefers-color-scheme:dark) {
-	main > ul > li a:visited:before, main > ul > li a:visited:after { color: #fff; }
+	.indexul > ul > li a:visited:before, .indexul > ul > li a:visited:after { color: #000; }
+	main > ul > li a:visited:before, main > ul > li a:visited:after { color: #000; }
 	* { color:#fff }
 	html {background-color: #625555;;background-repeat:repeat }
 	body { background:#000 }
@@ -94,5 +101,14 @@ div.codeview pre a { float:right;color:#FFC0CB;text-decoration:none;font-weight:
 	.nodark { filter:invert(0) hue-rotate(0deg) !important;background:transparent !important }
 	footer { border-top:1px solid white }
 	footer * { color:white }
+	
 }
 
+
+@media only screen and (max-width: 600px) {
+	body {margin: 1px 1px;}
+	main {margin-right: 5px; margin-left: 5px;}
+  }
+
+
+  .indexul li{margin-left: -30px;list-style: none;}

@@ -17,15 +17,15 @@ mkdir -p $site
 
 # List the index
 setupindex() {
-	echo "<h1>INDEX PAGE</h1>" > ../permanav/index/content.htm;
+	echo "<h2>INDEX PAGE</h2>" > ../permanav/index/content.htm;
 	for f in *; do #PREBERE MAPO PHOTOGRAPHY
-		echo "<h2>${f}</h2><ul>" >> ../permanav/index/content.htm;
+		echo "<h3>${f}</h3><div class="indexul"><ul>" >> ../permanav/index/content.htm;
 		cd $f;
 		for f in *; do #ZDAJ PREBERE PODMAPO PHOTOGRAPHY
 			echo "<li><a href='${site}/${f}.html'>${f}</a></li>" >> ../../permanav/index/content.htm; ##IN GENERIRA LINK PODMAPE
 		done
 		cd ..
-		echo "</ul>" >> ../permanav/index/content.htm;
+		echo "</ul></div>" >> ../permanav/index/content.htm;
 	done
 	echo "Setup index -- DONE"
 }
