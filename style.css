@@ -47,7 +47,7 @@ main ul li a {text-decoration: none;}
 
 main > ul > li a:visited:before, main > ul > li a:visited:after { color: #fff; }
 main > ul > li a:before { content: '{'; }
-main > ul > sli a:after { content: '}'; }
+main > ul > li a:after { content: '}'; }
 
 
 

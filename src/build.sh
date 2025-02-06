@@ -22,7 +22,7 @@ setupindex() {
 		echo "<h2>${f}</h2><ul>" >> ../permanav/index/content.htm;
 		cd $f;
 		for f in *; do #ZDAJ PREBERE PODMAPO PHOTOGRAPHY
-			echo "<li><a href='${site}/${f}.html'>{${f}}</a></li>" >> ../../permanav/index/content.htm; ##IN GENERIRA LINK PODMAPE
+			echo "<li><a href='${site}/${f}.html'>${f}</a></li>" >> ../../permanav/index/content.htm; ##IN GENERIRA LINK PODMAPE
 		done
 		cd ..
 		echo "</ul>" >> ../permanav/index/content.htm;
