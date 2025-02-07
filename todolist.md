@@ -19,4 +19,11 @@ BIG BUG
 - na githubu nedela photography, animation... linki. Mejbi ker je v href napisano index_PHOTOGRAPHY v site je pa index_photography
 
 
+meta se generira na roko in v indeksu pise meta zraven linka 
+poleg tega doda tudi incoming 
+recent activity
+
+ozadje pikice
+
+metagen ti se v mapo nardi .txt mapo z datumo
 
